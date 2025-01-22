@@ -28,3 +28,8 @@ def create_fun(x, y, z):
 
 print(create_fun(10, 20, 20))
 ```
+
+Builtin Functions
+Variables
+Operators: Arithmetics operators, Comparison Operators, Logical operators
+Conditionals
