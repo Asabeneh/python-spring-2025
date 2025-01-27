@@ -77,15 +77,61 @@ age = 2025 - int(birth_year)
 print(age)
 print('Your age is ', age) """
 
-height = float(input('What is your height?'))
-mass = float(input('What is your weight? '))
 
 '''
 bmi = mass / h*h
 
 '''
+""" 
+height = float(input('What is your height?'))
+mass = float(input('What is your weight? '))
+
 print(type(height), type(mass))
 bmi = mass / (height ** 2)
 
 print(bmi)
-print(round(bmi, 3))
+print(round(bmi, 3)) """
+
+# print(dir(10))
+print(dir('We love Pyhton'))
+print('We love Pyhton'.split())
+print('We love Pyhton'.swapcase())
+print('We love Pyhton'.lower())
+print('We love Pyhton'.upper())
+
+print(dir([1, 3,4]))
+
+print(min(-5, 10, 0, -20,  20, 30, 5))
+print(max(-5, 10, 0, -20,  20, 30, 5))
+print(sum([-5, 10, 0, -20,  20, 30, 5, 30]))
+
+print(range(0, 11, 1))
+print(list(range(5, 51, 5)))
+print(list(range(0, 1001, 100)))
+
+print(list(range(1, 102, 2)))
+print(list(range(0, 102, 2)))
+
+
+print(abs(-10))
+
+'''
+list()
+tuple()
+dict()
+id()
+dir()
+set()
+'''
+print(list('cat'))
+print(list())
+print(list((1, 2, 3)))
+print(tuple())
+print(tuple([1, 2, 3]))
+print(set([1, 2, 3, 3, 4, 5]))
+
+print(set(['Finland','Sweden','Sweden','Finland','Norway','Finland','Sweden']))
+print(len(['Finland','Sweden','Sweden','Finland','Norway','Finland','Sweden']))
+print(len(set(['Finland','Sweden','Sweden','Finland','Norway','Finland','Sweden'])))
+print(dict())
+print(list({'name':'asab','age':250}))
