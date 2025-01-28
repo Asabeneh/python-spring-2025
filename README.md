@@ -33,3 +33,8 @@ Builtin Functions
 Variables
 Operators: Arithmetics operators, Comparison Operators, Logical operators
 Conditionals
+
+Logical Operators
+Conditionals
+String and string method
+
