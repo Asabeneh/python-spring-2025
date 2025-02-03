@@ -117,3 +117,61 @@ number_of_a = dna_sequence.count('A')
 print(number_of_a)
 print(total, number_of_a / total)
 # C, G , T, and their proportion
+
+print('car'[::-1])
+# Palindrome words => civic => civic, level => level, eye => eye 
+print('level'[::-1] == 'level')
+
+print('python for everone'.capitalize())
+print('Python For Everone'.lower())
+print('python for everone'.upper())
+print('python for everone'.replace('python', 'AI'))
+print('python for everone'.split())
+print('I love Python. I love people. I teach Programming.'.split())
+print('I love Python. I love people. I teach Programming.'.lower().replace('.', '').split())
+print('I love Python. I love people. I teach Programming.'.split('.'))
+print('I love Python. I love people. I teach Programming.'.split('love'))
+print('     python for everone      ')
+print('     python for everone'.rstrip())
+print('     python for everone'.lstrip())
+print('python for everone'.startswith('python '))
+print('python for everyone'.endswith('everyone'))
+
+challenge = 'thirty\tdays\tof\tpython'
+print(challenge)
+print(challenge.expandtabs(8))
+print(challenge.expandtabs(15))
+
+print('python for everyone'.find('y'))
+print('python for everyone'.rfind('y'))
+print('python for everyone'.find('z'))
+
+if 'python for everyone'.find('z') == -1:
+    print('We do not find the value')
+
+print('python for everyone'.index('y'))
+print('python for everyone'.rindex('y'))
+
+if 'z' in 'python for everyone':
+    'python for everyone'.index('z')
+else:
+    print('It is not found')
+
+print('abc'.isalpha())
+print('abc123'.isalpha())
+print('abc123'.isalnum())
+
+challenge = '\u00B2' # 1/2
+print(challenge.isdigit())   # 
+
+num = '10'
+print(num.isnumeric()) # False
+
+web_tech = ['HTML', 'CSS', 'JavaScript', 'React']
+result = ', '.join(web_tech)
+print(result) # 'HTML CSS JavaScript React'
+
+print('SunNy'.swapcase())
+
+
+

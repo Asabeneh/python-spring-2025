@@ -1,4 +1,15 @@
-### Problem: **Grade Calculator**  
+
+- [Exercises](#exercises)
+  - [**Grade Calculator**](#grade-calculator)
+      - [**Example Runs**](#example-runs)
+    - [**Bonus Challenge** 🌟](#bonus-challenge-)
+  - [**🎯 Number Guessing Game 🎯**](#-number-guessing-game-)
+    - [**Example Runs**](#example-runs-1)
+    - [**Bonus Challenge** 🌟](#bonus-challenge--1)
+
+# Exercises
+
+## **Grade Calculator**  
 
 Write a Python script that asks the user to enter their exam score (a number between 0 and 100). Based on the score, the program should print the corresponding grade using the following grading system:
 
@@ -34,7 +45,7 @@ Modify your program to handle cases where the user enters a non-numeric value, d
 
 
 
-### **🎯 Number Guessing Game 🎯**  
+## **🎯 Number Guessing Game 🎯**  
 
 Write a Python script that generates a random number between **1 and 20** and asks the user to guess it. The user has **5 attempts** to guess correctly.  
 
