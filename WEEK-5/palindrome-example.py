@@ -1,0 +1,1 @@
+sentence = '''@He@ @%met%^$##%# his mom at no@on and s@he was watching %^$#an epso@ide%^$# of the begni@nging of her Sol@os. Her te@net%^$# hel@ped %^$#her to le@vel up her stats. %^$#After that h@e went to %^$#kayak driving Civic %^$#Honda.'''
