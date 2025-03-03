@@ -45,5 +45,12 @@ x = np.arange(-100, 100)
 y = np.array(x) ** 2 
 # y = 2x 
 
-plt.scatter(x, y)
-plt.show()
+# plt.scatter(x, y)
+# plt.show()
+
+weigth_min = []
+for cat in cats:
+    lowest, highest = cat['weight']['metric'].split(' - ')
+    value = int(lowest)
+    weigth_min.append(value)
+print(min(weigth_min))
