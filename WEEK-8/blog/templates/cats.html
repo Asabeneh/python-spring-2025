@@ -1,0 +1,30 @@
+<div style="text-align:center; width: 50%; margin: 25px auto;">
+    <ul>
+    <li>
+    <a href="/">Home</a>
+    </li>
+    <li>
+    <a href="/about">About</a>
+    </li>
+    <li>
+    <a href="/contact">Contact</a>
+    </li>
+    <li>
+    <a href="/cats">Cats</a>
+    </li>
+    <li>
+    <a href="/api/v1/cats">Cats API</a>
+    </li>
+    </ul>
+    <h1>Cats Paradise</h1>
+
+    {% for cat in cats %}
+    <div style="border: 2px solid gray;margin: 5px auto;">
+        <img src = {{cat.image_url}} style="width: 35%;" />
+        <h2>{{cat.name}}</h2>
+    <small>{{cat.origin}}</small>
+    <p>{{cat.description}}</p>
+    </div>
+    {% endfor %}
+  
+    </div>
