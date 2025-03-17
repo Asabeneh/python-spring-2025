@@ -1,0 +1,14 @@
+{% extends 'layout.html' %} {% block content %}
+
+<div class="cat-container">
+  <h1>Cats Paradise</h1>
+  {% for cat in cats %}
+  <div class="cat">
+    <img src="{{cat.image_url}}" />
+    <h2>{{cat.name}}</h2>
+    <small>{{cat.origin}}</small>
+    <p>{{cat.description}}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

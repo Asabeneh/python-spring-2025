@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Blogs</h2>
+{% for blog in data %}
+<h2>{{ blog.title }}</h2>
+<img src = "./static/images/koala.jpg"  />
+<p>{{ blog.content }}</p>
+
+{% for tag in blog.tags %}
+<span>{{tag}}</span>
+{% endfor %}
+{% endfor %}
+
+{% endblock %}

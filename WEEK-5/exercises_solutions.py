@@ -7,7 +7,7 @@ Use a while loop to calculate the sum of numbers from 1 to 100. Print the result
 
 """ for i in range(2, 21, 2):
     print(i) """
-from countries import countries
+from countries_data import countries
 from pprint import pprint
 i = 1
 total = 0

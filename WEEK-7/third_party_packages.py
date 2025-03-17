@@ -49,8 +49,15 @@ y = np.array(x) ** 2
 # plt.show()
 
 weigth_min = []
+weight_averages= []
+weight_max = []
 for cat in cats:
     lowest, highest = cat['weight']['metric'].split(' - ')
-    value = int(lowest)
-    weigth_min.append(value)
+    weigth_min.append(int(lowest))
+    weight_max.append(int(highest))
+    average = (int(lowest) + int(highest)) / 2
+    weight_averages.append(average)
 print(min(weigth_min))
+
+print(sum(weight_averages) / len(weight_averages))
+

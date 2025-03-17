@@ -10,7 +10,7 @@ for num in nums:
 
 print(new_lst) """
 
-from countries import countries
+from countries_data import countries
 countries_with_land = [country for country in countries if 'land' in country]
 print(countries_with_land)
 

@@ -2,7 +2,7 @@
 loops
 
 '''
-from countries import countries
+from countries_data import countries
 print(1)
 print(2)
 print(3)
