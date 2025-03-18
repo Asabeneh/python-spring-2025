@@ -106,6 +106,7 @@ Choose one of the project and implement a simple web application using Python an
   - Use `Flask` for building web applications.
   - Use `qrcode` for generating QR codes.
   - Use `TextBlob` for sentiment analysis
+  - Use `Flask-Mail` for the email application
 - **References**:
   - Cats Paradise API Format: <https://cats-paradise-f994f218e0ee.herokuapp.com/api/v1/cats>
   - QR Code Generator Example: <https://qrcode-generator-reader-305c57e50ba6.herokuapp.com/qrcode>
