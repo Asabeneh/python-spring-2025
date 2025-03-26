@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Blogs</h2>
+<a href="{{ url_for('add_blog')}}">Add Blog</a>
+{% for blog in data %}
+<h2>{{ blog.title }}</h2>
+<img src = "./static/images/placeholder.png"  />
+<p>{{ blog.content }}</p>
+
+{% for tag in blog.tags.split(',') %}
+<span>{{tag}}</span>
+{% endfor %}
+{% endfor %}
+
+{% endblock %}

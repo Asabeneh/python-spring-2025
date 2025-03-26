@@ -1,0 +1,63 @@
+
+{% extends 'layout.html' %}
+{% block content %}
+
+    <div class="container">
+        <h1>Add a New Blog Post</h1>
+
+        <form action="/add-blog" method="POST">
+            <!-- Title -->
+            <div class="form-group">
+                <label for="title">Title <span class="required">*</span></label>
+                <input type="text" id="title" name="title" maxlength="255" required>
+                <span class="help-text">Maximum 255 characters.</span>
+            </div>
+
+            <!-- Subtitle -->
+            <div class="form-group">
+                <label for="subtitle">Subtitle</label>
+                <input type="text" id="subtitle" name="subtitle" maxlength="255">
+                <span class="help-text">Optional, maximum 255 characters.</span>
+            </div>
+
+            <!-- Category -->
+            <div class="form-group">
+                <label for="category">Category <span class="required">*</span></label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="Data Analysis">Data Analysis</option>
+                    <option value="Data Engineering">Data Engineering</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                </select>
+            </div>
+
+            <!-- Cover Image URL -->
+            <div class="form-group">
+                <label for="cover_image">Cover Image URL</label>
+                <input type="url" id="cover_image" name="cover_image" maxlength="255">
+                <span class="help-text">Optional, provide a valid image URL.</span>
+            </div>
+
+            <!-- Content -->
+            <div class="form-group">
+                <label for="content">Content <span class="required">*</span></label>
+                <textarea id="content" name="content" required></textarea>
+                <span class="help-text">Enter the full blog content here.</span>
+            </div>
+
+            <!-- Tags -->
+            <div class="form-group">
+                <label for="tags">Tags <span class="required">*</span></label>
+                <input type="text" id="tags" name="tags" maxlength="255" required>
+                <span class="help-text">Enter tags separated by commas (e.g., python, data science).</span>
+            </div>
+
+            <!-- Submit and Cancel Buttons -->
+            <div class="form-group">
+                <button type="submit">Submit Blog</button>
+                <a href="/" class="cancel-btn">Cancel</a>
+            </div>
+        </form>
+</div>
+{% endblock %}
